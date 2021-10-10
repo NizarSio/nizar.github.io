@@ -1,0 +1,174 @@
+body{
+  font-family: verdana, calibri, sans-serif;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+nav > ul{
+   margin: 0px;
+   padding: 0px;
+
+
+}
+
+nav li {
+	list-style-type: none;
+}
+
+
+nav > ul > li{
+      float: left;
+}
+
+.submenu{
+
+	display: none;
+}
+
+nav input[type=checkbox]{
+    display: none;
+
+}
+
+.menu-mobile{
+	display: none;
+}
+
+nav{
+    width: 100%;
+    background-color: #424558;
+
+}
+
+nav > ul > li{
+   float: left;
+   position: relative;
+}
+
+nav > ul::after{
+     content:"" ;
+     display: table;
+     clear: both;
+
+
+}
+
+nav a{
+   display: inline-block;
+   text-decoration: none;
+
+}
+
+nav > ul > li > a{
+    padding: 20px 30px;
+    color: #fff;
+}
+
+nav li:hover .submenu{
+     display: inline-block;
+     position: absolute;
+     top: 100%;
+     left: 0px;
+     padding: 0px;
+     z-index: 100000;
+}
+
+.submenu li {
+
+	border-bottom: 1px solid #CCC;
+}
+
+.submenu li a {
+     padding: 15px 30px;
+     font-size: 13px;
+     color: #222538;
+     width: 270px;
+}
+
+.menu-html:hover{
+	 border-top: 5px solid #e44d26;
+	 background-color: darkred;
+}
+
+.menu-css:hover{
+     border-top: 5px solid #0070bb;
+     background-color: darkred;
+}
+
+.menu-js:hover{
+    border-top: 5px solid #0070bb;
+    background-color: darkred;
+}
+
+.menu-contact:hover{
+    border-top: 5px solid #BBB;
+    background-color: darkred;
+
+}
+
+nav > ul > li:hover a{
+    padding: 15px 30px 20px 30px;
+}
+
+
+.menu-html .submenu{
+	background-color: darkred;
+}
+
+.menu-css .submenu{
+    background-color: darkred;
+}
+
+.menu-js .submenu{
+	background-color: darkred;
+}
+
+.submenu li:hover a{
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+.menu-html .submenu li:hover{
+    background-color: darkred;
+}
+
+.menu-css .submenu li:hover{
+	background-color: darkred;
+}
+
+.menu-js .submenu li:hover{
+	background-color: darkred;
+}
+
+nav input[type=checkbox]:checked ~ ul{
+	display: block;
+}
+
+@media screen and (max-width: 680px){
+   .menu-mobile {
+     display: block;
+     color: darkred;
+     background-color: white;
+     text-align: center;
+     padding: 12px 0;
+    }
+
+nav ul{
+	display: none;
+   }
+
+}
+
+
+nav ul li, nav ul li a {
+    width: 100%;
+	text-align: center;
+}
+nav ul li a, nav ul li:hover a{
+	padding: 10px 0px 10px 0px;
+}
+nav li:hover .submenu{
+	display: block;
+	position: static;
+}
